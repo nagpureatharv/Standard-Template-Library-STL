@@ -26,6 +26,7 @@ int main()
     for(auto k= g1.rbegin() ; k< g1.rend() ; k++)
     {
         cout<<*k;
+        //43210
     }
     
 }
