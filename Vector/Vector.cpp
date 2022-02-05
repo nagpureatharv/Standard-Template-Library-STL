@@ -8,7 +8,7 @@ int main()
 
     for(int i= 0; i< 5 ; i++)
     {
-        //push_back: Adding Value From back.
+        //push_back: Adding value from back.
         g1.push_back(i);
         //01234
     }
