@@ -53,6 +53,11 @@ int main()
 
     //erase() - Delete the element from the set.
     g1.erase(90);
+    
+    //it point hte define index in set ex-4
+    auto it = g1.begin();
+        advance(it, 4);
+        int x = *it;
    
     //Printing the set.
     for(auto itr = g1.begin() ; itr != g1.end() ; itr++)
