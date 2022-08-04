@@ -5,7 +5,7 @@ int main()
     //unordered_map is an associated container that stores elements formed by the combination of key-value and a mapped value. 
     //The key value is used to uniquely identify the element and the mapped value is the content associated with the key.
     //Keys are unique. Same key cannot be used to store more than 1 values.
-    //Element are stored unordered way.
+    //Element are unordered way.
     //Internally unordered_map is implemented using Hash Table.
 
     unordered_map <int,int>g1;
@@ -40,5 +40,25 @@ int main()
     {
         cout<<it->first<<" "<<it->second<<endl;
     }
-
+    
+    //counting the number occure in array
+    int arr[] = {7,1,0,3,5,0,1,3,2,5,7,3,8,9,9}
+    unordered_map<int,int> usermap;
+    
+    for(int i=0;i<15;i++){
+    int key = arr[i];
+    usermap[key]++;
+    }
+    
+      for(auto it = g1.begin();it!=g1.end();it++)
+    {
+        cout<<it->first<<" "<<it->second<<endl;
+    }
+    //output -
+    // 9 2
+    //8 1
+    //2 1 
+    //3 3
+    //5 2 etc..
+    
 }
